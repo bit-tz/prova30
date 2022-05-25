@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+<meta charset = "UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
+    </head>
+    <body> 
+<header>
+    <img src="https://images.squarespace-cdn.com/content/v1/5b5486d8f93fd47f08e063c3/1533395298163-R2MLFUFJ1ODZM9RHHERJ/logo_white.png">
+    <!-- -->
+    <h1>Seu bem estar é nossa maior preocupação!</h1>
+    <hr>
+</header>
+<input type="checkbox" id="check">
+<label for="check" id="iconevish"><img src="https://i.imgur.com/RWHvwPE.png"/></label>
+
+<div class="menu-principal">	
+	<nav>    
+            <li><a href="index.html">Home</a></li>
+            <br>
+            <li><a href="novidades.html">Novidades</a></li>
+            <br>
+            <li><a href="sobre.html">Sobre</a></li>
+            <br>
+            <li><a href="imc.html">IMC</a></li>
+            <br>
+            <li><a href="galeria.html">Galeria</a></li>
+    </nav>
+</div>
+
+  <h1 id="gallerytext">Conheça nossos espaços!</h1>
+<div class="row">
+    <div class="column">
+      <img src="img/espaco1.jpg" alt="Espaços da academia" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="img/espaco2.jpg" alt="Espaços da academia" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="img/espaco3.jpg" alt="Espaços da academia" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="img/espaco4.jpg" alt="Espaços da academia" onclick="myFunction(this);">
+    </div>
+  </div>
+  
+  <!-- The expanding image container -->
+  <div class="container">
+    <!-- Close the image -->
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  
+    <!-- Expanded image -->
+    <img id="expandedImg">
+  
+    <!-- Image text -->
+    <div id="imgtext"></div>
+  </div>
+
+
+  <script src="js/script2.js"></script>
+    </body>
