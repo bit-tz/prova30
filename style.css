@@ -1,0 +1,411 @@
+body{
+    letter-spacing: 3px;
+    word-spacing: 1.2px;
+    background-color: rgb(0, 0, 0);
+    font-family: 'Hammersmith One', sans-serif;}  
+header{
+    border: 3px solid #c08300;
+    border-collapse: collapse;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+header hr {
+    width: 100%;
+}
+#logo{
+    height: 90px;
+    display: flex;
+    display: inline-block;
+    margin: 5px 25px 5px 30px;
+}
+header h1{
+    margin: 40px 50px 20px;
+    color: rgb(255, 255, 255);
+    font-family: 'Hammersmith One', sans-serif;    font-size: 38px;
+    text-align: right;
+    text-shadow: -2px 2px 1px #c08300;
+}
+header img{
+    margin: -15px 20px 20px;
+    height: 50px;
+    float: left;
+
+}
+
+#iconevish {
+	cursor: pointer;
+	padding: 15px;
+	position: absolute;
+	z-index: 1;
+}
+
+#check{
+	display: none;
+	background-color: rgb(255, 174, 0);
+}
+
+.menu-principal {
+    font-size: 23px;
+    background-color: #16161a;
+    font-family: 'Hammersmith One', sans-serif;
+	height: 100%;
+	width: 300px;
+	position: absolute;
+	left: -300px;
+	transition: all .2s linear;
+}
+
+.menu-principal  .link{
+	list-style: none;
+	background-color: #494950;
+}
+
+.menu-principal a:hover {
+
+    color:rgb(255, 255, 255);
+    font-size: 25px;
+    text-shadow: -1px 0 #c08300, 0 1px #c08300, 1px 0 #c08300, 0 -1px #c08300;
+}
+nav{
+    width: 100%;
+	position: absolute;
+	top: 90px;
+}
+nav a{
+    margin-left: 15px;
+	text-decoration: none;
+    color:white;
+}
+
+.link{
+
+	color: #f4f4f9;
+    font-family: 'Hammersmith One', sans-serif;
+	font-size: 12pt;
+	padding: 20px;
+	border-bottom: 2px solid #222;
+	transition:  all .2s linear;
+	opacity: 0;
+	margin-top: 200px;
+}
+.link:hover{
+    background-color: #49495079;
+}
+#check:checked ~ .menu-principal  nav a .link{
+		opacity: 1;
+		margin-top: 50;
+		transition-delay: .2s;
+}
+#check:checked ~ .menu-principal {
+		transform: translateX(300px);
+}
+#bem-estar{
+    font-family: 'Hammersmith One', sans-serif;
+    text-align: left;
+    color:rgb(255, 255, 255);
+    display: inline-block;
+    width: 75%;
+    box-sizing: border-box;
+    height:100%;
+}
+#bem-estar img{
+    width: 50%;
+    max-width: 600px;
+    margin: -240px -10px -120px 130px;
+}
+#bem-estar p {
+    background-image: linear-gradient(to left, rgba(255,0,0,0), rgb(29, 29, 29));
+    box-shadow: -3px 2px 1px #cca700;
+    font-size: 20px;
+    margin:15px 7px;
+    text-indent: 4em;
+    text-align: center;
+    line-height: 1.8em;
+    padding: 2px 10px;
+    display: inline-block;
+    width: 60%;
+    font-family: 'Hammersmith One', sans-serif;
+}
+.img-fitness {
+    float:right;
+    width: 20%;
+}
+.img-fitness img{
+    max-width: 700px;
+    margin-left: -500px;
+    padding-top: 90px;
+}
+.footer-content{
+    font-size: 18px;
+    color:brown;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px 20px;
+    width: 100%;
+}
+.footer-content img{
+    width: 40px;
+    margin-right: 20px;
+}
+.sobre {
+    background-image: url("https://scvb.fr/wp-content/uploads/2020/08/AdobeStock_196392551-scaled.jpeg");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding: 150px 78px;
+    width:100%;
+}
+#content-sobre{
+    font-family: 'Hammersmith One', sans-serif;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    width: 60%;
+    box-sizing: border-box;
+    height: 100%;
+}
+    #content-sobre p{
+        background-image: linear-gradient(to left, rgba(255,0,0,0), rgb(29, 29, 29));
+        box-shadow: -3px 2px 1px #cca700;
+        font-size: 23px;
+        margin:15px 7px;
+        text-indent: 4em;
+        text-align: center;
+        line-height: 1.8em;
+        padding: 2px 10px;
+        display: inline-block;
+        width: 100%;
+
+        font-family: 'Hammersmith One', sans-serif;
+}
+#content-sobre h3 {
+    text-shadow:  -3px 2px 1px #cca700;
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 50px;
+}
+.novidades{
+    font-family: 'Hammersmith One', sans-serif;
+    background-color: rgb(0, 0, 0);;
+    padding: 50px;
+    text-align: center;
+}
+.novidades hr{
+    box-shadow: -3px 2px 1px #cca700;
+    width: 70%;
+    height: 5px;
+    margin: 0px 15% 40px;
+}
+#content-novidades{
+    font-family: 'Hammersmith One', sans-serif;
+    color:white;
+    text-align: center;
+    align-content: center;
+    align-self: center;
+}
+#content-novidades article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+#content-novidades h3{
+    font-family: 'Hammersmith One', sans-serif;
+    color: #ffffff;
+    text-shadow:  -3px 2px 1px #cca700;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 40px 20px 50px;
+}
+#content-novidades p {
+    background-image: linear-gradient(to left, rgba(255,0,0,0), rgb(29, 29, 29));
+    box-shadow: -3px 2px 1px #cca700;
+    font-size: 20px;
+    margin:15px 7px;
+    text-indent: 4em;
+    text-align: center;
+    line-height: 1.8em;
+    padding: 2px 10px;
+    display: inline-block;
+    width: 60%;
+    font-family: 'Hammersmith One', sans-serif;
+}
+#content-novidades img{
+    max-width: 300px;
+    height: 200px;
+    margin: 20px;
+}
+
+#calc-imc {
+    color: white;
+    font-family: 'Hammersmith One', sans-serif;
+    background-image: linear-gradient(to left, rgba(255,0,0,0), rgb(29, 29, 29));
+    box-shadow:  -3px 2px 1px #cca700;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    width:30%;
+    height: 370px;
+    margin: 120px 40px 100px 100px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+#calc-imc label{
+    font-family: 'Hammersmith One', sans-serif;
+    font-size:22px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+#calc-imc button{
+    width: 60%;
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 19px;
+    text-align: center;
+    font-weight: bolder;
+    padding: 7px 0px 5px;
+    color: rgb(124, 82, 18);
+    box-shadow:  -3px 5px 1px #cca700;
+    border-radius: 14px;
+    border:none;
+    position: relative;
+}
+#calc-imc input{
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 21px;
+}
+#calc-imc button:hover{
+    color: rgb(63, 42, 10);
+    background-color: #cca700;
+    width: 63%;
+    font-size: 21px;
+}
+.result {
+    font-family: 'Hammersmith One', sans-serif;
+    background-color: #c08300;
+    border: 3px solid #c08300;
+    border-radius: 9px;
+    width: 40%;
+    height: 300px;
+    padding: 30px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+    margin: 122px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.result div{
+    background-color: rgb(255, 255, 255);
+    box-shadow: -3px 5px 1px rgb(202, 202, 202);
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 21px;
+    max-width: 650px;
+    padding: 10px 15px;
+    height: 400px;
+    display: inline-block;
+}
+
+.result h2{
+    color: white;
+    text-shadow:  -3px 2px 1px #cca700;
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+.page-result {
+    display: flex;
+}
+.result img{
+    width: 180px;
+    margin: 10px;
+    display: inline-block;
+}
+
+.invert {filter: invert(100%);}
+
+.column {
+    float: left;
+    width: 10%;
+    margin-top: 60px;
+    margin-right: 8%;
+    margin-left: 40px;
+    padding: 10px;
+  }
+  
+  /* Style the images inside the grid */
+  .column img {
+    width: 300px;
+    opacity: 1;
+    cursor: pointer;
+  }
+  
+  .column img:hover {
+    opacity: 1;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  /* The expanding image container (positioning is needed to position the close button and the text) */
+.container {
+    position: relative;
+    display: none;
+}
+
+#gallerytext {
+    width: 80%;
+    font-style: italic;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Hammersmith One', sans-serif;    
+    font-size: 38px;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(29, 29, 29));
+    box-shadow: 4px 3px 1px #cca700;
+    margin: 45px 20px -20px 85px;
+    text-indent: 4em;
+    line-height: 1.8em;
+    padding: 2px 10px;
+    display: inline-block;
+}
+
+  /* Expanding image text */
+#imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 75px;
+    color: white;
+    font-size: 20px;
+}
+
+    #expandedImg{
+        margin-left: 65px;
+        width: 90%;
+    }
+
+  /* Closable button inside the image */
+  .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+  }
+
